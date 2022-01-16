@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+	double val1 = -22;
+	double val2 = 33;
+	double val3 = 12;
+	double val4 = 3;
+	double val5 = 10;
+	double res;
+	double res1;
+	double res2;
+
+	res = val1 * val2;
+	res1 = val3 / val4;
+	res2 = val5 / val4;
+
+	printf("%f\n", res);
+	printf("%f\n", res1);
+	printf("%f\n", res2);
+
+	return 0;
+}

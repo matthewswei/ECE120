@@ -1,0 +1,9 @@
+QUESTION 1.  Read through the program lab9.bin. What do you expect the program to do? More specifically, which register will the program modify when it is run, and what will it contain when the program finishes? (You can probably figure this out merely by reading the comments provided in lab9.bin.)
+
+ANSWER: The program will AND the value with 00000 to set the value to 0 and then add the value 12 onto it. The program will modify register 2 and will contain the value 12 after the program is run.
+
+
+QUESTION 2.  Explain in a few sentences why the ability to step through a program (run one instruction at a time) is a very useful tool for debugging a program. Debugging is the process of finding and correcting bugs (or errors) in a program. Hint: Finding a bug is often much more difficult than correcting it.
+
+ANSWER: It is useful because you can find out which step the mistake is located in instead of having to read through every line of code to find out which one is wrong. Also, it prevents errors from happening in which you think a line is correct, but it is actually wrong and vice versa.
+

@@ -1,0 +1,20 @@
+Question 1: Describe the errors that occur when trying to assemble lab11.asm. Identify the cause of each error.
+line 14 - label appears before .ORIG, The cause is because there is no .ORIG present
+line 16 - instruction appears before .ORIG, This is because there is no instruction stating the stating the starting PC
+line 17 - constant outside of allowed range, The cause of this problem is because x3010 does not have -1 stored and its outside of the range
+line 19 - illegal operands for ADD, There is an extra comma messing up the instruction
+line 30 - constant outside of allowed range, The address stored at x300F is out of boundary and does not store the value 0
+line 32 - label OUTERLOOP has already appeared, The BRzp is misspelled
+line 35 - constant outside of allowed range, It says xxxx as the memory location and it should be RESULT
+line 42 - no .END directive found, There is no .END to end the program
+
+Question 2: For each label in the code, write down the corresponding memory location. 
+OUTERLOOP - x3004
+INNERLOOP - x3005
+INPUT - x300E
+CLEAR - x300F
+NEGONE - x3010
+RESULT - x3011
+
+Question 3: Between using labels and explicit memory locations/offsets, which one makes the most sense, and why?
+Labels because you don't have to account for the offset when doing instructions and it simplifies things down into just a word.
